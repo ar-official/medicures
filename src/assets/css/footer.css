@@ -1,0 +1,32 @@
+.footer-menu, .footer-bottom{
+    padding: 20px 0;
+    background-color:#605ea9;
+    color: white;
+}
+
+.footer-link{
+    padding: 20px 0;
+}
+
+.footer-link a{
+    padding: 5px 0;
+    display: inherit;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-bottom{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 400px;    
+    background-color:#605ea9;
+    color: white;
+}
+
+.footer-bottom .menu-links{
+    background-color: transparent;
+}
+
+.footer-bottom .menu-links a{
+    color: white !important;
+}

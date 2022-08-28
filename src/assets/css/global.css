@@ -1,0 +1,41 @@
+
+.container{
+    max-width: 1444px;
+}
+.text-shadow{
+    text-shadow: 2px 2px 2px grey;
+}
+.primary-backgroun-color{
+    background-color:#605ea9;
+    color: white;
+    padding: 30px 0;
+}
+.card{
+    overflow: hidden;
+}
+.card .card-img img{
+    width: 100%;
+}
+.card-text{
+    padding: 15px 0;
+}
+.offer-zone{
+    background-color: rgb(226, 226, 226);
+    padding: 30px 0;
+}
+.text-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a:hover{
+    text-decoration: none;
+}
+.text-link{
+    cursor: pointer;
+}
+
+.carousel-inner, .carousel-inner img, .carousel-item{
+    height: 100%;
+}
+  
