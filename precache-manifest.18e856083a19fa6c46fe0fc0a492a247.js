@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "b451b367445de6c9d500",
+    "revision": "e01755641a81f9400404",
     "url": "/medicures/static/css/main.db8b5052.chunk.css"
   },
   {
-    "revision": "b451b367445de6c9d500",
-    "url": "/medicures/static/js/main.b451b367.chunk.js"
+    "revision": "e01755641a81f9400404",
+    "url": "/medicures/static/js/main.e0175564.chunk.js"
   },
   {
     "revision": "ce47ab81b35290e2776b",
     "url": "/medicures/static/js/1.ce47ab81.chunk.js"
   },
   {
-    "revision": "0b58e4f82b67edb8271d",
+    "revision": "bd98eb5989fbf6f1cf01",
     "url": "/medicures/static/css/2.1acd4f5a.chunk.css"
   },
   {
-    "revision": "0b58e4f82b67edb8271d",
-    "url": "/medicures/static/js/2.0b58e4f8.chunk.js"
+    "revision": "bd98eb5989fbf6f1cf01",
+    "url": "/medicures/static/js/2.bd98eb59.chunk.js"
   },
   {
     "revision": "55f5f0ca54931dfe4da2",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/medicures/static/media/product4.03487d6e.jpg"
   },
   {
-    "revision": "8beb84d303dce886f860c15748810c43",
+    "revision": "0347d46bebebcba78dd474c74cc44dda",
     "url": "/medicures/index.html"
   }
 ];
