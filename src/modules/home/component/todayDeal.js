@@ -3,27 +3,38 @@ import { Col, Row, Card, Container } from 'react-bootstrap';
 import product1 from '../../../assets/img/product1.jpg';
 
 const Deal = (props) => {
+    const type = props.product.offerType
+    const title= props.product.name
+    const img = props.product.img
+    const id = props.product.id
     return(
-        <Col xs={4}>
-            <div className="card">
-                <div className="card-img"> 
-                    <img src={product1}/>
+        <>
+        { type=='today'? <Col xs={3}>
+            <div className="card" onClick={()=>props.productDetails(id)}>
+                <div className="card-img" style={{height:'300px'}}> 
+                    <img src={img}/>
                 </div> 
             </div>
             <div className="text-center card-text"> 
-                Card Text
+                {title}
             </div>
-        </Col>
+        </Col>:<></>}
+        </>
     )
 }
 
 const TodayDeal = (props) => {
+    const productDetails = (value) => {
+        window.open(`/product/${value}`);
+    }
     return(
         <Container>
             <h3>Today Deal</h3>
             <br/>
             <Row>
-                <Deal/>
+                {props.product && props.product.map((item, index)=>(
+                    <Deal key={index} product={item} productDetails={productDetails} />
+                ))}
             </Row>
         </Container>
     )
