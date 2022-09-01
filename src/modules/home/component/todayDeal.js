@@ -9,7 +9,7 @@ const Deal = (props) => {
     const id = props.product.id
     return(
         <>
-        { type=='today'? <Col xs={3}>
+        { type=='today'? <Col lg={3} md={4} sm={12} xs={12}>
             <div className="card" onClick={()=>props.productDetails(id)}>
                 <div className="card-img" style={{height:'300px'}}> 
                     <img src={img}/>
