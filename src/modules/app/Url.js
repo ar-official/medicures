@@ -1,4 +1,5 @@
-export const Url = '/medicures/'
+export const Url = '/'
+
 export const Constant= {
     productListUrl : Url+'product',
     productDetailUrl : Url+'product/:id'
