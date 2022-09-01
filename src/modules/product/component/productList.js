@@ -3,6 +3,7 @@ import { Col, Row, Button } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import '../../../assets/css/product.css'
 import { data } from '../data/data'
+import { redirectToProductDetail } from '../../app/redirectFun';
 
 
 const Product = (props) => {
@@ -43,9 +44,6 @@ const Product = (props) => {
 
 const ProductList = (props) => {
     const product = data.product;
-    const productDetails = (value) => {
-        props.history.push(`/product/${value}`);
-    }
     return (
         <Row>
             {Object.keys(product).map((key, index) =>
@@ -53,7 +51,7 @@ const ProductList = (props) => {
                     product={product[key]}
                     key={index}
                     index={index + 1}
-                    productDetails={productDetails}
+                    productDetails={redirectToProductDetail}
                 />)}
         </Row>
     )

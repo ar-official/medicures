@@ -5,7 +5,9 @@ import Home from '../home';
 import { Container } from 'react-bootstrap';
 import '../../assets/css/global.css'
 import { Footer} from './footer'
-import Product from '../product/index'
+import { Url, Constant } from './Url';
+import ProductList from '../product/component/productList';
+import ProductDetails from '../product/component/productDetails';
 
 const MainRoute = () => {
     return (
@@ -14,9 +16,10 @@ const MainRoute = () => {
             <MenuLinks />
             <br />
             <div >
-                <Route exact path='/' component={Home} ></Route>
+                <Route exact path={Url} component={Home} ></Route>
                 <Container>
-                    <Route path='/product' component={Product}></Route>
+                    <Route exact path={Constant.productListUrl} component={ProductList}></Route>
+                    <Route exact path={Constant.productDetailUrl} component={ProductDetails}></Route>
                 </Container>
             </div>
             <br />

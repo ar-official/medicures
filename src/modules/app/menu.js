@@ -4,12 +4,13 @@ import { createBrowserHistory } from 'history'
 import logo from '../../assets/img/logo.PNG';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../../assets/css/menu.css'
-import {menuItems} from './model'
+import {menuItems} from './Url'
 import {data} from '../product/data/data'
+import { Url } from './Url';
+import { redirectToProductDetail } from './redirectFun';
 
 
 export const Header = () => {
-  const history = createBrowserHistory()
   const [filteredData, setFilteredData] = useState();
   const handleChange=(event)=>{
     let value = event.target.value
@@ -28,15 +29,13 @@ export const Header = () => {
     setFilteredData()
   }
   }
-  const go = (value) => {
-    window.open(`/product/${value}`);
-  }
+  
   return (
     <div className="menu align-items-center">
       <Container>
         <Row>
           <Col xs={8} className=''>
-            <Link to="/">
+            <Link to={Url}>
               <img src={logo} style={{height:'38px'}}/>
             </Link>
           </Col>
@@ -51,7 +50,7 @@ export const Header = () => {
             <div className='dropdown-content '>
               {!filteredData && <>Please type any keyword  </>}
               {filteredData && filteredData.map((item, index) => (
-                <Row key={index} className='filtered-data' onClick={()=>go(item.id)}>
+                <Row key={index} className='filtered-data' onClick={()=>redirectToProductDetail(item.id)}>
                   <Col xs={2} className='filtered-data-img'>
                     <img src={item.img} />
                   </Col>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col, Row, Card, Container } from 'react-bootstrap';
-import product1 from '../../../assets/img/product1.jpg';
+import { Col, Row, Container } from 'react-bootstrap';
+import { redirectToProductDetail } from '../../app/redirectFun';
 
 const Deal = (props) => {
     const type = props.product.offerType
@@ -24,16 +24,13 @@ const Deal = (props) => {
 }
 
 const TodayDeal = (props) => {
-    const productDetails = (value) => {
-        window.open(`/product/${value}`);
-    }
     return(
         <Container>
             <h3>Today Deal</h3>
             <br/>
             <Row>
                 {props.product && props.product.map((item, index)=>(
-                    <Deal key={index} product={item} productDetails={productDetails} />
+                    <Deal key={index} product={item} productDetails={redirectToProductDetail} />
                 ))}
             </Row>
         </Container>
