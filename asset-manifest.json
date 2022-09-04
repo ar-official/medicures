@@ -1,7 +1,7 @@
 {
   "main.css": "/medicures/static/css/main.db8b5052.chunk.css",
-  "main.js": "/medicures/static/js/main.a31494f4.chunk.js",
-  "main.js.map": "/medicures/static/js/main.a31494f4.chunk.js.map",
+  "main.js": "/medicures/static/js/main.f337de7e.chunk.js",
+  "main.js.map": "/medicures/static/js/main.f337de7e.chunk.js.map",
   "static/js/1.ce47ab81.chunk.js": "/medicures/static/js/1.ce47ab81.chunk.js",
   "static/js/1.ce47ab81.chunk.js.map": "/medicures/static/js/1.ce47ab81.chunk.js.map",
   "static/css/2.1acd4f5a.chunk.css": "/medicures/static/css/2.1acd4f5a.chunk.css",
@@ -17,6 +17,6 @@
   "static/css/main.db8b5052.chunk.css.map": "/medicures/static/css/main.db8b5052.chunk.css.map",
   "static/css/2.1acd4f5a.chunk.css.map": "/medicures/static/css/2.1acd4f5a.chunk.css.map",
   "index.html": "/medicures/index.html",
-  "precache-manifest.dc989e174635636cce9b45bf232244cd.js": "/medicures/precache-manifest.dc989e174635636cce9b45bf232244cd.js",
+  "precache-manifest.af0c8ee1f06fab89e692f8907c62f0aa.js": "/medicures/precache-manifest.af0c8ee1f06fab89e692f8907c62f0aa.js",
   "service-worker.js": "/medicures/service-worker.js"
 }
