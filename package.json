@@ -1,6 +1,6 @@
 {
   "name": "medicures",
-  "homepage": "https://ar-official.github.io/medicures",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
