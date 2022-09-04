@@ -4,9 +4,7 @@ import { createBrowserHistory } from 'history'
 import logo from '../../assets/img/logo.PNG';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../../assets/css/menu.css'
-import {menuItems} from './Url'
 import {data} from '../product/data/data'
-import { Url } from './Url';
 import { redirectToProductDetail } from './redirectFun';
 
 
@@ -35,7 +33,7 @@ export const Header = () => {
       <Container>
         <Row>
           <Col xs={8} className=''>
-            <Link to={Url}>
+            <Link to="/">
               <img src={logo} style={{height:'38px'}}/>
             </Link>
           </Col>
@@ -85,3 +83,16 @@ export const MenuLinks = (props) => {
     </div>
   )
 }
+
+const menuItems = [
+  {
+      "menuId": 0,
+      'menuItem': 'Home',
+      'menuLink': '/',
+  },
+  {
+      "menuId": 1,
+      'menuItem': 'Products',
+      'menuLink': '/product',
+  }
+];
