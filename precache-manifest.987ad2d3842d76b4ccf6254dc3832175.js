@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f337de7e7fc5177b9ca5",
+    "revision": "9026627c5397921386ec",
     "url": "/medicures/static/css/main.db8b5052.chunk.css"
   },
   {
-    "revision": "f337de7e7fc5177b9ca5",
-    "url": "/medicures/static/js/main.f337de7e.chunk.js"
+    "revision": "9026627c5397921386ec",
+    "url": "/medicures/static/js/main.9026627c.chunk.js"
   },
   {
     "revision": "ce47ab81b35290e2776b",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/medicures/static/media/product4.03487d6e.jpg"
   },
   {
-    "revision": "f60aa1601e2a2cab3ae51c9a44d5aee5",
+    "revision": "9b848e38c5ccc8b7ead2fa0db3eb3db9",
     "url": "/medicures/index.html"
   }
 ];
