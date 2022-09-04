@@ -33,7 +33,7 @@ export const Header = () => {
       <Container>
         <Row>
           <Col xs={8} className=''>
-            <Link to="/">
+            <Link to="/medicures">
               <img src={logo} style={{height:'38px'}}/>
             </Link>
           </Col>
@@ -88,11 +88,11 @@ const menuItems = [
   {
       "menuId": 0,
       'menuItem': 'Home',
-      'menuLink': '/',
+      'menuLink': '/medicures',
   },
   {
       "menuId": 1,
       'menuItem': 'Products',
-      'menuLink': '/product',
+      'menuLink': '/medicures/product',
   }
 ];
