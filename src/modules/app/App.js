@@ -7,9 +7,10 @@ import { HashRouter } from 'react-router-dom'
 const App = () => {
   const history = createBrowserHistory()
   return (
-    <HashRouter>
+    <>
+      <HashRouter basename="/product"></HashRouter>
       <MainRoute history={history} />
-    </HashRouter>
+    </>
   )
 };
 

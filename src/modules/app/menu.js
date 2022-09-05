@@ -33,7 +33,7 @@ export const Header = () => {
       <Container>
         <Row>
           <Col xs={8} className=''>
-            <Link to="/medicures">
+            <Link to="/">
               <img src={logo} style={{height:'38px'}}/>
             </Link>
           </Col>
