@@ -18,7 +18,7 @@ const MainRoute = () => {
                 <Route exact path="/" component={Home} ></Route>
                 <Container>
                     <Route exact path="/medicures/product" component={ProductList}></Route>
-                    <Route exact path="/medicures/product/:id" component={ProductDetails}></Route>
+                    <Route exact path="/product/:id" component={ProductDetails}></Route>
                 </Container>
             </div>
             <br />
