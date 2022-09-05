@@ -69,6 +69,18 @@ export const Header = () => {
 export const MenuLinks = (props) => {
   const history = createBrowserHistory()
   const currLink= history.location.pathname
+  const menuItems = [
+    {
+        "menuId": 0,
+        'menuItem': 'Home',
+        'menuLink': '/',
+    },
+    {
+        "menuId": 1,
+        'menuItem': 'Products',
+        'menuLink': '/product',
+    }
+  ];
   return (
     <div className="menu-links" >
       <Container >  
@@ -84,15 +96,3 @@ export const MenuLinks = (props) => {
   )
 }
 
-const menuItems = [
-  {
-      "menuId": 0,
-      'menuItem': 'Home',
-      'menuLink': '/medicures',
-  },
-  {
-      "menuId": 1,
-      'menuItem': 'Products',
-      'menuLink': '/medicures/product',
-  }
-];
