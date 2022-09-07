@@ -6,9 +6,7 @@ import { createBrowserHistory } from 'history'
 const App = () => {
   const history = createBrowserHistory()
   return (
-    <>
       <MainRoute history={history} />
-    </>
   )
 };
 
