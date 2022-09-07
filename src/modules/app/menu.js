@@ -68,17 +68,20 @@ export const Header = () => {
 
 export const MenuLinks = (props) => {
   const history = createBrowserHistory()
-  const currLink= history.location.pathname
+  console.log(history)
+  const currLink= history.location.hash
   const menuItems = [
     {
         "menuId": 0,
         'menuItem': 'Home',
         'menuLink': '/',
+        'hashLink':''
     },
     {
         "menuId": 1,
         'menuItem': 'Products',
         'menuLink': '/product',
+        'hashLink':'#product'
     }
   ];
   return (
@@ -87,7 +90,7 @@ export const MenuLinks = (props) => {
       {menuItems.map((item, index) =>
         (<Link 
           key= {index}
-          className={ currLink === item.menuLink ? 'active' : ''} 
+          className={ currLink === item.hashLink ? 'active' : ''} 
           to={item.menuLink}>{item.menuItem}
         </Link>)
       )}

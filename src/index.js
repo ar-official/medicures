@@ -6,13 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { HashRouter, Switch } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <HashRouter basename='/' hashType='noslash'>
+      <Switch>
+        <App />
+      </Switch>
+    </HashRouter>
   </React.StrictMode>
 );
 

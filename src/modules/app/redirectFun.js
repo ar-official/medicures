@@ -4,6 +4,6 @@ const history = createBrowserHistory()
 
 export const redirectToProductDetail = (value) => {
     // history.push(`/medicures/product/${value}`);
-    window.open(`/product/${value}`);
+    window.open(`/#product/${value}`);
 }
 
