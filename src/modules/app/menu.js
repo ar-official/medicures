@@ -6,6 +6,7 @@ import { Row, Col, Container} from 'react-bootstrap';
 import '../../assets/css/menu.css'
 import {data} from '../product/data/data'
 import { redirectToProductDetail } from './redirectFun';
+import { country, menuItems } from './model';
 
 
 export const Header = () => {
@@ -70,20 +71,6 @@ export const MenuLinks = (props) => {
   const history = createBrowserHistory()
   console.log(history)
   const currLink= history.location.hash
-  const menuItems = [
-    {
-        "menuId": 0,
-        'menuItem': 'Home',
-        'menuLink': '/',
-        'hashLink':''
-    },
-    {
-        "menuId": 1,
-        'menuItem': 'Products',
-        'menuLink': '/product',
-        'hashLink':'#product'
-    }
-  ];
   return (
     <div className="menu-links" >
       <Container >  
@@ -94,6 +81,14 @@ export const MenuLinks = (props) => {
           to={item.menuLink}>{item.menuItem}
         </Link>)
       )}
+      <select name='country' id='country' style={{float:'right'}} className="select">
+        <option>--Select country--</option>
+      {country.map((item, index)=>{
+        return(
+        <option key={index} value={item.code}>{item.name}</option>
+        )
+        })}
+      </select>
       </Container>
     </div>
   )
