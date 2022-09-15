@@ -56,7 +56,7 @@ export const data = {
       "description": "Keto Bullet Coffee is a drink for weight loss. Have you ever heard about Keto Coffee? If not, you missed a lot. Keto Coffee is a real healthy trend in the last few years. It combines not only excellent taste but also great benefits in terms of your body weight, well-being, appearance, and even brain work! You ask how can usual coffee influence us so much? The answer is simple. The combination of coffee and coconut oil makes a great advantage. First, coconut oil makes you feel full longer. Second, coffee increases metabolism. Third, coconut oil containing medium-chain triglycerides protects your brain, improves cognitive abilities, and can be a preventive measure against Alzheimer's disease! Isn't it enough to start changing life for the better? We think it is. Also, Keto Coffee is spread worldwide and really effective. You have a great chance to run the offer now and get your profit .",
       "rate": "49 $",
       "MRP": "98 $",
-      "tracking_url": "https://uh8d10ad74uh.axdsz.pro/?target=-7EBNQCgQAAAfe9wEDF4AABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&al=85160&ap=-1",
+      "tracking_url": "https://uh8d10ad74uh.wsjksz.cc/?rid=-7EBNQCgQAAHAHHAUABgEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx",
       "img": "https://my.adcombo.com/offer_preview/32791/003-3.jpg",
       "avail_country_code": ["US"],
       "avail_country": ['United States'],
