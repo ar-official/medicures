@@ -49,7 +49,7 @@ export const data = {
       "meta_description": ''
     },
     {
-      "id": 3,
+      "id": 'keto-bullet-us',
       "item_id": '32791',
       "name": "Keto Bullet",
       'offerType':'today',
