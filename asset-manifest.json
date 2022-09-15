@@ -1,7 +1,7 @@
 {
   "main.css": "./static/css/main.e9c6dfad.chunk.css",
-  "main.js": "./static/js/main.87b275e7.chunk.js",
-  "main.js.map": "./static/js/main.87b275e7.chunk.js.map",
+  "main.js": "./static/js/main.92d0a6dd.chunk.js",
+  "main.js.map": "./static/js/main.92d0a6dd.chunk.js.map",
   "static/js/1.5ee476ae.chunk.js": "./static/js/1.5ee476ae.chunk.js",
   "static/js/1.5ee476ae.chunk.js.map": "./static/js/1.5ee476ae.chunk.js.map",
   "static/css/2.e870b866.chunk.css": "./static/css/2.e870b866.chunk.css",
@@ -14,9 +14,9 @@
   "static/media/product2.jpg": "./static/media/product2.81931a10.jpg",
   "static/media/product3.jpg": "./static/media/product3.5b04ebe4.jpg",
   "static/media/product4.jpg": "./static/media/product4.03487d6e.jpg",
-  "static/css/main.e9c6dfad.chunk.css.map": "./static/css/main.e9c6dfad.chunk.css.map",
   "static/css/2.e870b866.chunk.css.map": "./static/css/2.e870b866.chunk.css.map",
+  "static/css/main.e9c6dfad.chunk.css.map": "./static/css/main.e9c6dfad.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.86c64088db9356786548d29d3439c319.js": "./precache-manifest.86c64088db9356786548d29d3439c319.js",
+  "precache-manifest.03e05e21284c0f9ff122409301de88af.js": "./precache-manifest.03e05e21284c0f9ff122409301de88af.js",
   "service-worker.js": "./service-worker.js"
 }
