@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "92d0a6ddda32c9ad41fb",
+    "revision": "e54cbdbf802b54d627d2",
     "url": "./static/css/main.e9c6dfad.chunk.css"
   },
   {
-    "revision": "92d0a6ddda32c9ad41fb",
-    "url": "./static/js/main.92d0a6dd.chunk.js"
+    "revision": "e54cbdbf802b54d627d2",
+    "url": "./static/js/main.e54cbdbf.chunk.js"
   },
   {
     "revision": "5ee476ae1244b517c019",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "./static/media/product1.84beb6ca.jpg"
   },
   {
-    "revision": "1ecf349c2433a408cee867d1481afbe9",
-    "url": "./static/media/logo.1ecf349c.PNG"
+    "revision": "ef966d315eeaa7e326e6fbbe8593830a",
+    "url": "./static/media/logo.ef966d31.PNG"
   },
   {
     "revision": "81931a101cbc01da08fc8e2876364463",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "./static/media/product4.03487d6e.jpg"
   },
   {
-    "revision": "0498d38c5b30711d8a5b4f7a3173d987",
+    "revision": "022bb34167a3db264232ff4030fd452a",
     "url": "./index.html"
   }
 ];

@@ -1,7 +1,7 @@
 {
   "main.css": "./static/css/main.e9c6dfad.chunk.css",
-  "main.js": "./static/js/main.92d0a6dd.chunk.js",
-  "main.js.map": "./static/js/main.92d0a6dd.chunk.js.map",
+  "main.js": "./static/js/main.e54cbdbf.chunk.js",
+  "main.js.map": "./static/js/main.e54cbdbf.chunk.js.map",
   "static/js/1.5ee476ae.chunk.js": "./static/js/1.5ee476ae.chunk.js",
   "static/js/1.5ee476ae.chunk.js.map": "./static/js/1.5ee476ae.chunk.js.map",
   "static/css/2.e870b866.chunk.css": "./static/css/2.e870b866.chunk.css",
@@ -10,13 +10,13 @@
   "runtime~main.js": "./static/js/runtime~main.e2f6597d.js",
   "runtime~main.js.map": "./static/js/runtime~main.e2f6597d.js.map",
   "static/media/product1.jpg": "./static/media/product1.84beb6ca.jpg",
-  "static/media/logo.PNG": "./static/media/logo.1ecf349c.PNG",
+  "static/media/logo.PNG": "./static/media/logo.ef966d31.PNG",
   "static/media/product2.jpg": "./static/media/product2.81931a10.jpg",
   "static/media/product3.jpg": "./static/media/product3.5b04ebe4.jpg",
   "static/media/product4.jpg": "./static/media/product4.03487d6e.jpg",
   "static/css/2.e870b866.chunk.css.map": "./static/css/2.e870b866.chunk.css.map",
   "static/css/main.e9c6dfad.chunk.css.map": "./static/css/main.e9c6dfad.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.03e05e21284c0f9ff122409301de88af.js": "./precache-manifest.03e05e21284c0f9ff122409301de88af.js",
+  "precache-manifest.cc97e0bedfa0ec9b24abd2509582e3d2.js": "./precache-manifest.cc97e0bedfa0ec9b24abd2509582e3d2.js",
   "service-worker.js": "./service-worker.js"
 }
