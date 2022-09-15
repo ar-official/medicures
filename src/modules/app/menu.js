@@ -29,15 +29,15 @@ export const Header = () => {
   }
   
   return (
-    <div className="menu align-items-center">
+    <div className="align-items-center">
       <Container>
         <Row>
-          <Col xs={8} className=''>
+          <Col xs={8} className='menu' >
             <Link to="/">
               <img src={logo} style={{height:'38px'}}/>
             </Link>
           </Col>
-          <Col md={4} xs={12} className="text-right dropdown">
+          <Col md={4} xs={12} className="menu text-right dropdown">
             <input 
               onChange={handleChange} 
               className="form-control" 
