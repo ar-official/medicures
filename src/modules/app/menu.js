@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link} from "react-router-dom";
 import { createBrowserHistory } from 'history'
-import logo from '../../assets/img/logo.PNG';
+import logo from '../../assets/img/logo.png'
 import { Row, Col, Container} from 'react-bootstrap';
 import '../../assets/css/menu.css'
 import {data} from '../product/data/data'

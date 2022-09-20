@@ -141,7 +141,7 @@ export const data = {
       "description": "Anti-aging serum. Active ingredient of Rechiol - bakuchiol – is a plant-based substitute of retinol. This phyto concentrate is produced from a rare plant Psoralea corylifolia in India. Bakuchiol enables production of types I, III and IV collagen and suppresses enzymes that disturb protein and cellular metabolism of the skin. It doesn’t only affect the surface of the epidermis, but also penetrates into the deep layers of the derm, enabling cellular renewal mechanism from inside. Active ingredients: Bakuchiol, PEPHA®-TIGHT, Collagen, Almond oil, Vitamin C, Licorice extract. NO local celebrities on creatives (landings, prelandings and banners).",
       "rate": "34990 CLP",
       "MRP": "69980 CLP",
-      'offerType': 'today',
+      'offerType': '',
       "tracking_url": "https://uh8d10ad74uh.wsjksz.cc/?target=-7EBNQCgQAAAfe9wED3HYABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx",
       "img": "https://my.adcombo.com/offer_preview/30428/Skype_Picture_2020_02_26T13_13_23_334Z.jpeg",
       "avail_country": ['Chile'],

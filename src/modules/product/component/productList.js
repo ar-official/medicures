@@ -14,7 +14,7 @@ const Product = (props) => {
     const rate = props.product.rate;
     const mrp = props.product.MRP;
     return (
-        <Col className="product-container" md={4} lg={3} xs={12} >
+        <Col className="product-container" md={4} lg={3} xs={6} sm={6} >
             <div className="product-card" onClick={()=>props.productDetails(id)}>
                 <Row style={{ padding: '15px' }}>
                     <Col className="text-left">

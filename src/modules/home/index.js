@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeCarousel from './component/homeCarousel'
 import FreshRecommendationList from './component/freshRecommendation'
-import TodayDeal from './component/todayDeal'
+import ProductSection from './component/productSection'
 import OfferZoneList from './component/offerZone'
 import { data } from '../product/data/data';
 
@@ -14,7 +14,7 @@ const Home = (props) => {
                 <FreshRecommendationList/>
            </div>
            <br/> */}
-           <TodayDeal product={data.product}/>
+           <ProductSection name="Today's Deal" product={data.product}/>
            <br/>
            {/* <div className="offer-zone">
                 <OfferZoneList/>

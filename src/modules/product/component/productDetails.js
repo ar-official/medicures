@@ -4,6 +4,7 @@ import * as Icon from 'react-bootstrap-icons';
 import '../../../assets/css/product.css'
 import {data} from '../data/data'
 import { Redirect } from 'react-router-dom';
+import ProductSection from '../../home/component/productSection';
 
 const ProductDetails = (props) => {
     const [detail, setDetail] = useState();
@@ -20,7 +21,6 @@ const ProductDetails = (props) => {
         }
     },[detail]);
     
-    console.log(props)
     const redirect=(url)=>{
         // window.location.href = url;
         window.open(url, '_blank' );
@@ -28,6 +28,7 @@ const ProductDetails = (props) => {
     return(
         <>
         {detail?
+        <>
         <Row style={{minHeight:'67vh'}}>
             <Col md={4} xs={12}>
                 <div className='detailImg'>
@@ -47,6 +48,10 @@ const ProductDetails = (props) => {
                 <Button variant="light" onClick={()=>redirect(detail.tracking_url)}>Get more details</Button>
             </Col>
         </Row>
+        <hr/>
+        <br/>
+        <ProductSection name='More Product' product={data.product}/>
+        </>
         :<></>
     }
     </>

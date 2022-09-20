@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
+import * as Icon from 'react-bootstrap-icons';
 import { redirectToProductDetail } from '../../app/redirectFun';
 
 const Deal = (props) => {
@@ -7,11 +8,15 @@ const Deal = (props) => {
     const title= props.product.name
     const img = props.product.img
     const id = props.product.id
+    const countryCode = props.product.avail_country_code
     return(
         <>
-        { type=='today'? <Col lg={3} md={4} sm={12} xs={12}>
+        { type=='today'? <Col lg={3} md={4} sm={6} xs={6}>
             <div className="card" onClick={()=>props.productDetails(id)}>
-                <div className="card-img" style={{height:'300px'}}> 
+                <div className='localization-icon'>
+                    <Icon.Globe2/>&nbsp;<span>{countryCode}</span>
+                </div>
+                <div className="card-img"> 
                     <img src={img}/>
                 </div> 
             </div>
@@ -23,10 +28,10 @@ const Deal = (props) => {
     )
 }
 
-const TodayDeal = (props) => {
+const ProductSection = (props) => {
     return(
         <Container>
-            <h3>Today Deal</h3>
+            <h3>{props.name}</h3>
             <br/>
             <Row>
                 {props.product && props.product.map((item, index)=>(
@@ -37,4 +42,4 @@ const TodayDeal = (props) => {
     )
 }
 
-export default TodayDeal;
+export default ProductSection;
