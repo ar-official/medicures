@@ -9,6 +9,9 @@
  border-radius: 30px;
  display: inline-block;
 }
+.menu-links a:last-child{
+  float: right;
+}
 .menu-links a:hover{
 
     text-decoration: none;
@@ -75,4 +78,13 @@
   }
   .filtered-data-text{
     font-size: 14px;
+  }
+  .select{
+    width: 150px;
+    border: none;
+    outline:none;
+    background-color: transparent;
+  }
+  .select option{
+    width: 150px;
   }
