@@ -4,7 +4,7 @@ import { createBrowserHistory } from 'history'
 import logo from '../../assets/img/logo.png'
 import { Row, Col, Container} from 'react-bootstrap';
 import '../../assets/css/menu.css'
-import {data} from '../product/data/data'
+import { data } from '../data/data';
 import { redirectToProductDetail } from './redirectFun';
 
 
