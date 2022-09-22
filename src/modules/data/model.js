@@ -15,6 +15,7 @@ export const menuItems = [
 
 export const country =[ 
   {"name": "United States", "code": "US"}, 
+  {"name": "India", "code": "IN"}, 
   {"name": "Tajikistan", "code": "TJ"}, 
   {"name": "Argentina", "code": "AR"}, 
   {"name": "Spain", "code": "ES"}, 
