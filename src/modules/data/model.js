@@ -12,7 +12,16 @@ export const menuItems = [
         'hashLink':'#product'
     }
   ];
+
 export const country =[ 
+  {"name": "United States", "code": "US"}, 
+  {"name": "Tajikistan", "code": "TJ"}, 
+  {"name": "Argentina", "code": "AR"}, 
+  {"name": "Spain", "code": "ES"}, 
+  {"name": "Kosovo", "code": "XK"}, 
+  {"name": "Chile", "code": "CL"}, 
+]
+export const countryList =[ 
     {"name": "Afghanistan", "code": "AF"}, 
     {"name": "land Islands", "code": "AX"}, 
     {"name": "Albania", "code": "AL"}, 

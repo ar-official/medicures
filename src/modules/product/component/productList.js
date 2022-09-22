@@ -1,10 +1,43 @@
-import React from 'react';
-import { Col, Row, Button } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { useDispatch,useSelector } from 'react-redux'
+import {fetchProductList, fetchUserCountry } from '../data/actions'
+import { Col, Row } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import '../../../assets/css/product.css'
-import { data } from '../data/data'
 import { redirectToProductDetail } from '../../app/redirectFun';
 
+
+
+const ProductList = (props) => {
+    const countryIsFetching = useSelector(state => state.Products.params.countryIsFetching);
+    const countryFetched = useSelector(state => state.Products.params.countryFetched);
+    const userCountry = useSelector(state => state.Products.params.userCountry);
+    const productIsFetching = useSelector(state => state.Products.params.productIsFetching);
+    const productList = useSelector(state => state.Products.products);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if(countryIsFetching){
+            dispatch(fetchUserCountry());
+        }if(productIsFetching && countryFetched){
+            dispatch(fetchProductList());
+        }
+    },[countryIsFetching, productIsFetching, countryFetched]);
+    return (
+        <Row>
+            {productList && Object.keys(productList).map((key, index) =>
+                userCountry && userCountry === productList[key].avail_country_code ?
+                    <Product
+                        product={productList[key]}
+                        key={index}
+                        index={index + 1}
+                        productDetails={redirectToProductDetail}
+                    />
+                    : <></>
+            )}
+        </Row>
+    )
+}
 
 const Product = (props) => {
     const id = props.product.id;
@@ -15,7 +48,7 @@ const Product = (props) => {
     const mrp = props.product.MRP;
     return (
         <Col className="product-container" md={4} lg={3} xs={6} sm={6} >
-            <div className="product-card" onClick={()=>props.productDetails(id)}>
+            <div className="product-card" onClick={() => props.productDetails(id)}>
                 <Row style={{ padding: '15px' }}>
                     <Col className="text-left">
                     </Col>
@@ -32,7 +65,7 @@ const Product = (props) => {
                     <Row>
                         <Col className="text-left">
                             <b>&nbsp;{rate}</b>&nbsp;&nbsp;&nbsp;
-                            <span style={{textDecoration: 'line-through', color:'grey'}}>&nbsp;{mrp}</span>
+                            <span style={{ textDecoration: 'line-through', color: 'grey' }}>&nbsp;{mrp}</span>
                         </Col>
                     </Row>
                 </div>
@@ -42,19 +75,5 @@ const Product = (props) => {
 }
 
 
-const ProductList = (props) => {
-    const product = data.product;
-    return (
-        <Row>
-            {Object.keys(product).map((key, index) =>
-                <Product
-                    product={product[key]}
-                    key={index}
-                    index={index + 1}
-                    productDetails={redirectToProductDetail}
-                />)}
-        </Row>
-    )
-}
 
 export default ProductList;

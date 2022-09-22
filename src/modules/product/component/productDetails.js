@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import '../../../assets/css/product.css'
-import {data} from '../data/data'
+import {data} from '../../data/data'
 import { Redirect } from 'react-router-dom';
 import ProductSection from '../../home/component/productSection';
 

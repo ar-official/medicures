@@ -33,7 +33,7 @@ const HomeCarousel = (props) => {
             
            <Carousel style={{overflow:'hidden', height:'430px', borderRadius:'5px'}}>
                 {item.map((item, index)=>(
-                    <Carousel.Item>
+                    <Carousel.Item key={index}>
                         <img
                         className="d-block w-100"
                         src={item.img}
