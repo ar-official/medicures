@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from "react-router-dom";
 import { createBrowserHistory } from 'history'
@@ -8,10 +8,24 @@ import '../../assets/css/menu.css'
 import { data } from '../data/data'
 import { redirectToProductDetail } from './redirectFun';
 import { country, menuItems } from '../data/model';
-import { setUserCountry } from '../product/data/actions';
+import { setUserCountry, fetchUserCountry } from '../product/data/actions';
+import * as Icon from 'react-bootstrap-icons';
 
 
 export const Header = () => {
+  const userCountry = useSelector(state => state.Products.params.userCountry);
+  const countryIsFetching = useSelector(state => state.Products.params.countryIsFetching);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (countryIsFetching) {
+      dispatch(fetchUserCountry());
+    }
+  }, [countryIsFetching]);
+
+  const onHandleCountry = (e) => {
+    dispatch(setUserCountry(e.target.value));
+  }
   const [filteredData, setFilteredData] = useState();
   const handleChange = (event) => {
     let value = event.target.value
@@ -34,12 +48,12 @@ export const Header = () => {
   return (
     <div className="align-items-center">
       <Row>
-        <Col xs={8} className='menu' >
+        <Col xs={7} className='menu' >
           <Link to="/">
             <img src={logo} style={{ height: '38px' }} />
           </Link>
         </Col>
-        <Col md={4} xs={12} className="menu text-right dropdown">
+        <Col md={4} xs={9} className="menu text-right dropdown">
           <input
             onChange={handleChange}
             className="form-control"
@@ -62,6 +76,27 @@ export const Header = () => {
             }
           </div>
         </Col>
+        <Col md={1} xs={3} className="menu text-right">
+          <div className='centered-element'>
+            <Icon.Globe2 size={25} color={'grey'}/>&nbsp;{userCountry}
+            <select
+              name='country'
+              value={''}
+              id='country'
+              className="select"
+              style={{width:'25px'}}
+              onChange={onHandleCountry}>
+
+                  <option></option>
+              {country.map((item, index) => {
+                return (
+                  <option key={index} value={item.code}>{item.name}</option>
+                )
+              })}
+
+            </select>
+          </div>
+        </Col>
       </Row>
     </div>
   )
@@ -69,15 +104,8 @@ export const Header = () => {
 
 
 export const MenuLinks = (props) => {
-  const userCountry = useSelector(state => state.Products.params.userCountry);
-  const dispatch = useDispatch();
-
   const history = createBrowserHistory()
   const currLink = history.location.hash
-
-  const onHandleCountry = (e) => {
-    dispatch(setUserCountry(e.target.value));
-  }
   return (
     <div className="menu-links" >
       <Container >
@@ -88,24 +116,6 @@ export const MenuLinks = (props) => {
           to={item.menuLink}>{item.menuItem}
         </Link>)
         )}
-        <div style={{ float: 'right', paddingTop:'10px'}}>
-          <select
-            name='country'
-            value={userCountry}
-            id='country'
-            className="select"
-            onChange={onHandleCountry}>
-
-            <option>--Select country--</option>
-            {country.map((item, index) => {
-              return (
-                <option key={index} value={item.code}>{item.name}</option>
-              )
-            })}
-
-          </select>
-
-        </div>
       </Container>
     </div>
   )

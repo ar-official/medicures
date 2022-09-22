@@ -148,6 +148,22 @@ export const data = {
       "avail_country": [" United States "],
       "meta_title": "",
       "meta_description": ""
+    },{
+      "id": '8286-Varikostop-IN',
+      "item_id": " ID: 8286 ",
+      "name": "Varikostop - IN",
+      "description": "NO POPUNDER TRAFFIC",
+      "rate": "",
+      "MRP": "",
+      "offerType": "",
+      "tracking_url": "https://uh8d10ad74uh.axdsz.pro/?rid=-7EBNQCgQAAHBNHgUABgEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx",
+      "img": "https://my.adcombo.com/offer_preview/8286/Varikostop_1.png",
+      "avail_country_code": 'IN',
+      "avail_country": [
+        " India "
+      ],
+      "meta_title": "",
+      "meta_description": ""
     }
   ]
 }

@@ -9,7 +9,6 @@ import { redirectToProductDetail } from '../../app/redirectFun';
 
 
 const ProductList = (props) => {
-    const countryIsFetching = useSelector(state => state.Products.params.countryIsFetching);
     const countryFetched = useSelector(state => state.Products.params.countryFetched);
     const userCountry = useSelector(state => state.Products.params.userCountry);
     const productIsFetching = useSelector(state => state.Products.params.productIsFetching);
@@ -17,12 +16,10 @@ const ProductList = (props) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if(countryIsFetching){
-            dispatch(fetchUserCountry());
-        }if(productIsFetching && countryFetched){
+        if(productIsFetching && countryFetched){
             dispatch(fetchProductList());
         }
-    },[countryIsFetching, productIsFetching, countryFetched]);
+    },[productIsFetching, countryFetched]);
     return (
         <Row>
             {productList && Object.keys(productList).map((key, index) =>

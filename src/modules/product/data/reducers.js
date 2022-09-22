@@ -6,7 +6,7 @@ const defaultLoginParams = {
   countryFetched:false,
   productIsFetching:true,
   productFetched:false,
-  userCountry:'US'
+  userCountry:''
 }
 
 function products(state = {}, action) {

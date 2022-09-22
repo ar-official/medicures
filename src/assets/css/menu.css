@@ -9,9 +9,6 @@
  border-radius: 30px;
  display: inline-block;
 }
-.menu-links a:last-child{
-  float: right;
-}
 .menu-links a:hover{
 
     text-decoration: none;
@@ -86,4 +83,10 @@
   }
   .select option{
     width: 150px;
+  }
+  .centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
