@@ -94,13 +94,12 @@ export const MenuLinks = (props) => {
             value={userCountry}
             id='country'
             className="select"
-            style={{textAlign: 'right'}}
             onChange={onHandleCountry}>
 
             <option>--Select country--</option>
             {country.map((item, index) => {
               return (
-                <option key={index} value={item.code}>{item.code}</option>
+                <option key={index} value={item.code}>{item.name}</option>
               )
             })}
 
