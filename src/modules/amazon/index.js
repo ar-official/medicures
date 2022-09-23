@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import ProductList from './component/productList'
 import ProductDetails from './component/productDetails'
 
-const ProductPage = () => {
+const AmazonPage = () => {
     return (
         <>
             <Route exact path="/product" component={ProductList} ></Route>
@@ -14,4 +14,4 @@ const ProductPage = () => {
 
 }
 
-export default ProductPage;
+export default AmazonPage;

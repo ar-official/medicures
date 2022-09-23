@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap';
 import '../../assets/css/global.css'
 import { Footer} from './footer';
 import ProductPage from '../product';
+import AmazonPage from '../amazon';
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
             <Route exact path="/" component={Home} ></Route>
             <Container>
                 <Route path="/product" component={ProductPage}></Route>
-                <Route path="/product" component={AmazonPage}></Route>
+                <Route path="/amzn" component={AmazonPage}></Route>
             </Container>
         </div>
         <br />
