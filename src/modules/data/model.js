@@ -10,7 +10,13 @@ export const menuItems = [
         'menuItem': 'Products',
         'menuLink': '/product',
         'hashLink':'#product'
-    }
+    },
+    {
+      "menuId": 2,
+      'menuItem': 'Amazon',
+      'menuLink': '/amazon',
+      'hashLink':'#amazon'
+  }
   ];
 
 export const country =[ 
