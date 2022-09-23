@@ -22,6 +22,7 @@ const App = () => {
             <Route exact path="/" component={Home} ></Route>
             <Container>
                 <Route path="/product" component={ProductPage}></Route>
+                <Route path="/product" component={AmazonPage}></Route>
             </Container>
         </div>
         <br />

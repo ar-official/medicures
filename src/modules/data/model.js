@@ -14,7 +14,7 @@ export const menuItems = [
     {
       "menuId": 2,
       'menuItem': 'Amazon',
-      'menuLink': '/amazon',
+      'menuLink': '/amzn',
       'hashLink':'#amazon'
   }
   ];
